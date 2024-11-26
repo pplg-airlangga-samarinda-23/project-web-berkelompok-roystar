@@ -1,0 +1,89 @@
+body {
+    background-color: white;
+    color: #333;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    color: red;
+    text-align: center; /* Memusatkan judul */
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+}
+
+.content {
+    display: flex; /* Menyusun gambar dan deskripsi secara horizontal */
+    align-items: center; /* Menyelaraskan gambar dan teks secara vertikal */
+    margin-top: 20px;
+}
+
+img {
+    width: 150px; /* Menentukan lebar gambar */
+    height: 150px; /* Menentukan tinggi gambar agar berbentuk kotak */
+    object-fit: cover; /* Menjaga gambar tetap sesuai dengan kotak */
+    margin-right: 20px; /* Jarak antara gambar dan deskripsi */
+}
+
+.description {
+    flex: 1; /* Membiarkan deskripsi mengisi ruang sisa */
+    font-size: 1.1em;
+    text-align: left; /* Menyusun teks di sebelah kiri */
+}
+
+/* Media Queries untuk Responsif */
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column; /* Mengubah arah flex menjadi kolom di perangkat kecil */
+        align-items: center; /* Memusatkan konten */
+    }
+
+    img {
+        width: 120px; /* Mengatur lebar gambar lebih kecil di perangkat kecil */
+        height: 120px; /* Mengatur tinggi gambar lebih kecil */
+        margin-right: 0; /* Menghapus jarak pada perangkat kecil */
+        margin-bottom: 20px; /* Memberi jarak di bawah gambar */
+    }
+
+    .description {
+        font-size: 1em; /* Ukuran font lebih kecil di perangkat kecil */
+    }
+
+    h1 {
+        font-size: 1.5em; /* Ukuran judul lebih kecil di perangkat kecil */
+    }
+}
+.footer {
+    text-align: center;
+    padding: 1rem 40;
+    background-color: black;
+}
+
+.footer-links {
+    color: white; /* text-gray-400 */
+    font-size: 0.875rem; /* text-sm */
+}
+
+.footer-link {
+    color: white; /* text-gray-400 */
+    text-decoration: none;
+    transition: text-decoration 0.3s ease;
+}
+
+.footer-link:hover {
+    text-decoration: underline;
+}
+
+.separator {
+    margin: 0 0.5rem;
+}
+
+.footer-copyright {
+    color: white; /* text-gray-400 */
+    font-size: 0.875rem; /* text-sm */
+    margin-top: 0.5rem;
+}

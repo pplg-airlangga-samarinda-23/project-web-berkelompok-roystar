@@ -1,0 +1,126 @@
+.continer {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white; /* Background specific to the container */
+    background-blend-mode: overlay; /* Optional blending effect */
+    position: relative;
+    z-index: 0;
+}
+
+.continer form {
+    width: 670px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    flex-wrap: wrap;
+}
+
+.continer form h1 {
+    color: black;
+    font-weight: 500;
+    margin-top: 20px;
+    width: 500px;
+    text-align: center;
+}
+
+.continer form input {
+    width: 290px;
+    height: 40px;
+    padding-left: 10px;
+    outline: none;
+    font-size: 15px;
+    margin-bottom: 10px;
+    background: none;
+    border-bottom: 2px solid black;
+    color: black;
+}
+
+.continer form input::placeholder {
+    color: black;
+}
+
+.continer form #lastname,
+.continer form #mobile {
+    margin-left: 20px;
+}
+
+.continer form h4 {
+    color: black;
+    font-weight: 300;
+    width: 600px;
+    margin-top: 20px;
+}
+
+.continer form textarea {
+    background: none;
+    border: none;
+    border-bottom: 2px solid black;
+    color: black;
+    font-weight: 200;
+    font-size: 15px;
+    padding: 10px;
+    outline: none;
+    min-width: 600px;
+    max-width: 600px;
+    min-height: 80px;
+    max-height: 80px;
+}
+
+textarea::-webkit-scrollbar-thumb {
+    background-color: rgba(194, 194, 194, 0.713);
+}
+
+.continer form #button {
+    border: none;
+    background: white;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #333;
+    width: 100px;
+    padding: 0;
+    margin-right: 500px;
+    margin-bottom: 30px;
+    transition: 0.3s;
+}
+
+.continer form #button:hover {
+    opacity: 0.7;
+}
+.footer {
+    text-align: center;
+    padding: 1rem 40;
+    background-color: black;
+}
+
+.footer-links {
+    color: white; /* text-gray-400 */
+    font-size: 0.875rem; /* text-sm */
+}
+
+.footer-link {
+    color: white; /* text-gray-400 */
+    text-decoration: none;
+    transition: text-decoration 0.3s ease;
+}
+
+.footer-link:hover {
+    text-decoration: underline;
+}
+
+.separator {
+    margin: 0 0.5rem;
+}
+
+.footer-copyright {
+    color: white; /* text-gray-400 */
+    font-size: 0.875rem; /* text-sm */
+    margin-top: 0.5rem;
+}

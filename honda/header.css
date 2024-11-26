@@ -1,0 +1,7 @@
+.sosmed{
+    /* margin-right:auto ;
+    width: 100%;
+    align-items:right ; */
+    display:flex;
+    justify-content: end;
+  }
